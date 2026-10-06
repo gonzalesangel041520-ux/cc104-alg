@@ -1,0 +1,16 @@
+arr = [10, 20, 30, 40, 50]
+
+# O(1) access - instant
+print(f"First: {arr[0]}, Last: {arr[-1]}")
+
+# O(n) traversal
+for x in arr:
+    print(x)
+
+# O(n) insertion - worst case at index 0
+arr.insert(0, 5)
+print("After insertion:", arr) # [5, 10, 20, 30, 40, 50]
+
+# O(n) deletion - has to search + shift
+arr.remove(30)
+print("After deletion:", arr) # [5, 10, 20, 40, 50]
